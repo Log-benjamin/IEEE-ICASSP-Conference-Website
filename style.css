@@ -522,19 +522,41 @@ body.active {
 /* SHOW MORE OR LESS  */
 
 .show-more-less-speaker {
+  padding-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 3%;
   text-align: center;
-  padding-top: 1%;
-  margin-left: 2%;
-  margin-right: 2%;
-  padding-bottom: 7%;
+  display: flex;
+  justify-content: center;
 }
 
 .show-more-less-speaker button {
+  text-align: center;
   background-color: white;
   color: black;
-  padding: 3% 40%;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 30%;
+  padding-right: 30%;
   font-size: 0.8rem;
   border: 1px solid #d3d3d3;
+}
+
+.show-more-less-speaker .fa-angle-down,
+.show-more-less-speaker .fa-angle-up {
+  color: tomato;
+}
+
+.speakers .speaker-three,
+.speakers .speaker-four,
+.speakers .speaker-five,
+.speakers .speaker-six {
+  display: none;
+}
+
+.show-more-less-speaker .less-content {
+  display: none;
 }
 
 /* SHOW MORE OR LESS  */
@@ -576,6 +598,10 @@ body.active {
   mix-blend-mode: darken;
 }
 
+.home-partners {
+  display: none;
+}
+
 /* partner section styling  */
 
 /* footer section  */
@@ -597,7 +623,35 @@ body.active {
   color: #272a31;
 }
 
+.home-foot {
+  display: none;
+}
+
 /* footer section  */
+
+.speakers .speaker-three.active,
+.speakers .speaker-four.active,
+.speakers .speaker-five.active,
+.speakers .speaker-six.active {
+  display: flex;
+}
+
+.home-foot.active {
+  display: flex;
+}
+
+.home-partners.active {
+  display: block;
+}
+
+.more-content.active {
+  display: none;
+}
+
+.less-content.active {
+  display: block;
+}
+
 .speaker-img:hover img {
   opacity: 0.5;
 }
@@ -614,7 +668,29 @@ body.active {
   background-color: #5ca1e1;
 }
 
+.show-more-less-speaker button:hover {
+  background: #272a31;
+  color: tomato;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
+  .more-content {
+    display: none;
+  }
+
+  .less-content {
+    display: none;
+  }
+
+  .home-partners {
+    display: block;
+  }
+
+  .home-foot {
+    display: flex;
+  }
+
   .toolbar-2 .menu-close-bar {
     display: none;
   }
@@ -892,6 +968,13 @@ body.active {
   .speaker-six {
     grid-row-start: 3;
     grid-column-start: 2;
+  }
+
+  .speakers .speaker-three,
+  .speakers .speaker-four,
+  .speakers .speaker-five,
+  .speakers .speaker-six {
+    display: flex;
   }
 
   /* Speaker section styling  */
