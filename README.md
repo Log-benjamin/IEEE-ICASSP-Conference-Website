@@ -3,7 +3,7 @@
 <div align="center">
 
   <img src="assets/IEEE_image.svg" width="200" height="auto" alt="logo1" />
-  <img src="assets/ICASSP_image.png" width="140" height="auto" alt="logo2" />
+  <img src="assets/ICASSP_image.PNG" width="140" height="auto" alt="logo2" />
 
   <h3><b>Institute of Electrical and Electronics Engineers</b></h3>
   <h4><b>International Conference on Acoustics, Speech and Signal Processing</b></h2>
