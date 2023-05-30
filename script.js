@@ -4,6 +4,10 @@ const menuLists = document.querySelector('.toolbar-2 ul');
 const speakersContainer = document.querySelector('.speakrs-container');
 const homeIC = document.querySelector('.home-IC');
 const { body } = document;
+const showmorebtn = document.querySelector('.more-content');
+const showlessbtn = document.querySelector('.less-content');
+const partners = document.querySelector('.home-partners');
+const foot = document.querySelector('.home-foot');
 
 openMenu.addEventListener('click', () => {
   body.classList.add('active');
@@ -20,6 +24,13 @@ closeMenu.addEventListener('click', () => {
   homeIC.classList.remove('active');
 });
 
+window.onscroll = () => {
+  body.classList.remove('active');
+  closeMenu.classList.remove('active');
+  menuLists.classList.remove('active');
+  openMenu.classList.remove('active');
+  homeIC.classList.remove('active');
+};
 /* -----------------------Create Feature Section-------------------------*/
 const featuredSpeaker = [
   {
@@ -96,3 +107,22 @@ function createFeature() {
 }
 createFeature();
 /* -----------------------Create Feature Section-------------------------*/
+
+const speaker3 = document.querySelector('.speakers .speaker-three');
+const speaker4 = document.querySelector('.speakers .speaker-four');
+const speaker5 = document.querySelector('.speakers .speaker-five');
+const speaker6 = document.querySelector('.speakers .speaker-six');
+
+const moreLess = [speaker3, speaker4, speaker5, speaker6, partners, foot, showmorebtn, showlessbtn];
+
+showmorebtn.addEventListener('click', () => {
+  for (let i = 0; i < moreLess.length; i += 1) {
+    moreLess[i].classList.add('active');
+  }
+});
+
+showlessbtn.addEventListener('click', () => {
+  for (let i = 0; i < moreLess.length; i += 1) {
+    moreLess[i].classList.remove('active');
+  }
+});
