@@ -2,6 +2,7 @@ const openMenu = document.querySelector('.menu-bar');
 const closeMenu = document.querySelector('.close-bar');
 const menuLists = document.querySelector('.toolbar-2 ul');
 const speakersContainer = document.querySelector('.speakrs-container');
+const homeIC = document.querySelector('.home-IC');
 const { body } = document;
 
 openMenu.addEventListener('click', () => {
@@ -9,12 +10,14 @@ openMenu.addEventListener('click', () => {
   closeMenu.classList.add('active');
   menuLists.classList.add('active');
   openMenu.classList.add('active');
+  homeIC.classList.add('active');
 });
 closeMenu.addEventListener('click', () => {
   body.classList.remove('active');
   closeMenu.classList.remove('active');
   menuLists.classList.remove('active');
   openMenu.classList.remove('active');
+  homeIC.classList.remove('active');
 });
 
 /* -----------------------Create Feature Section-------------------------*/
