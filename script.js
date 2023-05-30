@@ -25,7 +25,7 @@ const featuredSpeaker = [
     speakerImg: 'assets/Andrea Goldsmith.PNG',
     speakerName: 'Andrea Goldsmith',
     speakerTitle: 'Dean of Engineering and Applied Science at Princeton University',
-    abstract: 'As 5G takes to the airwaves, we now turn our imagination to the next generation of wireless technology, The promise of this technology has created an international race to innovate, with significant investment by government as well as industry.'
+    abstract: 'As 5G takes to the airwaves, we now turn our imagination to the next generation of wireless technology, The promise of this technology has created an international race to innovate, with significant investment by government as well as industry.',
   },
   {
     idNo: 1,
@@ -33,7 +33,7 @@ const featuredSpeaker = [
     speakerImg: 'assets/Richard G Baraniuk.PNG',
     speakerName: 'Richard G. Baranuk',
     speakerTitle: 'Professor of Electrical and Computer Engineering at Rice',
-    abstract: 'We study the geometry of deep learning through the lens of approximation theory via splines. The enabling insight is that a large class of deep networks can be written as a composition of continuous piecewise affine (CPA) spline operators.'
+    abstract: 'We study the geometry of deep learning through the lens of approximation theory via splines. The enabling insight is that a large class of deep networks can be written as a composition of continuous piecewise affine (CPA) spline operators.',
   },
   {
     idNo: 2,
@@ -41,7 +41,7 @@ const featuredSpeaker = [
     speakerImg: 'assets/Michael l Jordan.PNG',
     speakerName: 'Michael l.Jordan',
     speakerTitle: 'Distinguished Professor in the Department of Electrical Engineering and Computer Science at the University of California, Berkeley',
-    abstract: 'Artificial intelligence (AI) has focused on a paradigm in which intelligence inheres in a single, autonomous agent.  Social issues are entirely secondary in this paradigm. When AI systems are deployed...'
+    abstract: 'Artificial intelligence (AI) has focused on a paradigm in which intelligence inheres in a single, autonomous agent.  Social issues are entirely secondary in this paradigm. When AI systems are deployed...',
   },
   {
     idNo: 3,
@@ -49,7 +49,7 @@ const featuredSpeaker = [
     speakerImg: 'assets/Christos Harilos.PNG',
     speakerName: 'Christos Harilaos',
     speakerTitle: 'Donovan Family Professor of Computer Science at Columbia University',
-    abstract: 'There is little doubt that cognitive phenomena are the result of neural activity.  However, there has been slow progress towards articulating an overarching computational theory of how exactly this happens.'
+    abstract: 'There is little doubt that cognitive phenomena are the result of neural activity.  However, there has been slow progress towards articulating an overarching computational theory of how exactly this happens.',
   },
   {
     idNo: 4,
@@ -57,7 +57,7 @@ const featuredSpeaker = [
     speakerImg: 'assets/Arjun R Pillai.png',
     speakerName: 'Arjun R. Pillai',
     speakerTitle: 'Co-founder & CEO | Profoundis',
-    abstract: 'We work in the interesting domain of Natural Language Processing, Text analytics and more. Vibe is our product which delivers holistic, accurate, and relevant prospect & customer information to improve Enterprise sales & marketing productivity.'
+    abstract: 'We work in the interesting domain of Natural Language Processing, Text analytics and more. Vibe is our product which delivers holistic, accurate, and relevant prospect & customer information to improve Enterprise sales & marketing productivity.',
   },
   {
     idNo: 5,
@@ -65,12 +65,12 @@ const featuredSpeaker = [
     speakerImg: 'assets/Ayanna Howard.png',
     speakerName: 'Ayanna Howard',
     speakerTitle: 'Chief Technology Officer at Zyrobotics',
-    abstract: 'In recent years, deep neural network-based text-to-speech (TTS) models have been developed to generate high-fidelity audio that can be indistinguishable from genuine speech. A major limitation of most of these models, however, is that they can only synthesize voices from the training set.'
+    abstract: 'In recent years, deep neural network-based text-to-speech (TTS) models have been developed to generate high-fidelity audio that can be indistinguishable from genuine speech. A major limitation of most of these models, however, is that they can only synthesize voices from the training set.',
   },
 ];
 
 function createFeature() {
-  featuredSpeaker.forEach((project) =>{
+  featuredSpeaker.forEach((project) => {
     const sectionTemplate = `
     <div class="${project.speakerNo}">
       <div class="speaker-img">
