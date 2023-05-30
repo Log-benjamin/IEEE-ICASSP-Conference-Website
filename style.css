@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(240, 240, 240, 0.9);
+  background-color: rgb(255, 255, 255, 0.9);
 }
 
 body,
@@ -17,6 +17,10 @@ body,
 a {
   text-decoration: none;
   color: #272a31;
+}
+
+.home-icon {
+  display: none;
 }
 
 /* styling for the toolbar section starts here  */
@@ -37,6 +41,10 @@ a {
   display: none;
 }
 
+.toolbar .home-IC {
+  display: none;
+}
+
 .toolbar-2 .close-bar {
   display: none;
   right: 0;
@@ -51,6 +59,10 @@ a {
 /* Menu pressed  */
 .menu-bar.active {
   display: none;
+}
+
+.toolbar .home-IC.active {
+  display: block;
 }
 
 .close-bar.active {
@@ -105,6 +117,10 @@ body.active {
 .home-content1 {
   padding: 5rem 0 2rem 0;
   margin-left: 7%;
+}
+
+.abouthome-content1 {
+  text-align: center;
 }
 
 .home-content1 p {
@@ -168,9 +184,23 @@ body.active {
   padding: 0.6rem;
   width: 75%;
   font-size: 0.8rem;
-  color: #272a31;
+  color: #55575d;
   border: 5px solid white;
   background-color: #f9f9f9;
+}
+
+.abouthome-content2 {
+  width: 50%;
+  padding: 0.6rem;
+  margin-left: 25%;
+  font-size: 0.9rem;
+  color: #74767b;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+}
+
+.abouthome-content2 p {
+  text-align: center;
 }
 
 .home-content3 {
@@ -179,6 +209,19 @@ body.active {
   width: 75%;
   color: #272a31;
   padding-bottom: 2rem;
+}
+
+.abouthome-content3 {
+  text-align: center;
+  color: #74767b;
+  width: 50%;
+  margin-left: 25%;
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+}
+
+.abouthome-content3 a {
+  text-decoration: underline;
 }
 
 .home-content3 .date {
@@ -195,6 +238,85 @@ body.active {
 }
 
 /* styling for home section */
+
+/* aboutpage */
+.about-global-summit {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.about-global-summit h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #272a31;
+}
+
+.about-global-summit h2::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 4%;
+  border-bottom: 2px solid rgb(255, 94, 66, 0.6);
+  margin-top: 0.5rem;
+  margin-left: 48%;
+  align-self: center;
+}
+
+.about-global-summit p {
+  width: 40%;
+  margin-left: 30%;
+  color: #272a31;
+  font-size: 0.9em;
+}
+
+.about-global-summit img {
+  width: 40%;
+}
+
+.past-campaign {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.past-campaign h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #272a31;
+}
+
+.past-campaign p {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.past-campaign h2::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 4%;
+  border-bottom: 2px solid rgb(255, 94, 66, 0.6);
+  margin-top: 0.5rem;
+  margin-left: 48%;
+  align-self: center;
+}
+
+.past-images {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.past-images img {
+  width: 100%;
+  opacity: 0.6;
+  color: rgba(254, 101, 101, 0.4);
+  margin-bottom: 1rem;
+}
+
+/* aboutpage */
 
 /* program section styling  */
 .program {
@@ -284,10 +406,6 @@ body.active {
   border: none;
 }
 
-.join-link button:hover {
-  background-color: #5ca1e1;
-}
-
 /* program section styling  */
 
 /* Speaker section styling  */
@@ -332,7 +450,6 @@ body.active {
 
 .speaker-img img {
   left: 0;
-  width: 15vw;
   opacity: 1;
   transition: 0.5s ease;
   backface-visibility: hidden;
@@ -354,10 +471,6 @@ body.active {
 
 .middle a {
   margin-right: 1rem;
-}
-
-.speaker-img:hover .middle {
-  opacity: 1;
 }
 
 .speaker-profile {
@@ -405,6 +518,26 @@ body.active {
 }
 
 /* Speaker section styling  */
+
+/* SHOW MORE OR LESS  */
+
+.show-more-less-speaker {
+  text-align: center;
+  padding-top: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 7%;
+}
+
+.show-more-less-speaker button {
+  background-color: white;
+  color: black;
+  padding: 3% 40%;
+  font-size: 0.8rem;
+  border: 1px solid #d3d3d3;
+}
+
+/* SHOW MORE OR LESS  */
 
 /* partner section styling  */
 .Partners {
@@ -467,6 +600,18 @@ body.active {
 /* footer section  */
 .speaker-img:hover img {
   opacity: 0.5;
+}
+
+.past-images img:hover {
+  opacity: 1;
+}
+
+.speaker-img:hover .middle {
+  opacity: 1;
+}
+
+.join-link button:hover {
+  background-color: #5ca1e1;
 }
 
 @media screen and (min-width: 768px) {
@@ -569,6 +714,61 @@ body.active {
     margin-right: 3.5vw;
   }
 
+  /* about */
+
+  .home-icon {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10%;
+    padding-top: 1rem;
+  }
+
+  .home-icon a {
+    margin: 0;
+    padding: 0;
+  }
+
+  .home-icon i {
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+  }
+
+  .home-icon .fa-chevron-right {
+    color: #ec5242;
+  }
+
+  /* styling for home section */
+
+  /* aboutpage */
+  .abouthome-content1 p {
+    display: none;
+  }
+
+  .about-global-summit h2,
+  .past-campaign h2 {
+    font-size: 2rem;
+  }
+
+  .about-global-summit img {
+    width: 30%;
+  }
+
+  .past-images {
+    margin-left: 11%;
+    margin-right: 10%;
+    display: flex;
+    padding-top: 2rem;
+  }
+
+  .past-images img {
+    width: 90%;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* aboutpage */
+
   /* home section styling  */
   .home {
     background-image: url("assets/homepage-bg-image.png");
@@ -585,7 +785,7 @@ body.active {
   }
 
   .home-content2 {
-    width: 60%;
+    width: 50%;
   }
 
   .home-content3 {
@@ -696,6 +896,13 @@ body.active {
 
   /* Speaker section styling  */
 
+  /* SHOW MORE LESS  */
+  .show-more-less-speaker {
+    display: none;
+  }
+
+  /* SHOW MORE LESS  */
+
   /* partner section styling  */
 
   .Partners-container {
@@ -708,12 +915,25 @@ body.active {
     width: 100%;
   }
 
+  .about-partners {
+    display: none;
+  }
+
   /* partner section styling  */
 
   /* footer section  */
   .foot p {
     width: 80%;
     font-size: 0.85rem;
+  }
+
+  .about-foot {
+    background-color: #434848;
+    padding-bottom: 3rem;
+  }
+
+  .about-foot p {
+    color: #d3d3d3;
   }
 
   /* footer section  */
