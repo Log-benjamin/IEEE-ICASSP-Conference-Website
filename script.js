@@ -8,28 +8,23 @@ const showmorebtn = document.querySelector('.more-content');
 const showlessbtn = document.querySelector('.less-content');
 const partners = document.querySelector('.home-partners');
 const foot = document.querySelector('.home-foot');
+const MenuArray = [body, closeMenu, menuLists, openMenu, homeIC];
 
 openMenu.addEventListener('click', () => {
-  body.classList.add('active');
-  closeMenu.classList.add('active');
-  menuLists.classList.add('active');
-  openMenu.classList.add('active');
-  homeIC.classList.add('active');
+  for (let z = 0; z < MenuArray.length; z += 1) {
+    MenuArray[z].classList.add('active');
+  }
 });
 closeMenu.addEventListener('click', () => {
-  body.classList.remove('active');
-  closeMenu.classList.remove('active');
-  menuLists.classList.remove('active');
-  openMenu.classList.remove('active');
-  homeIC.classList.remove('active');
+  for (let z = 0; z < MenuArray.length; z += 1) {
+    MenuArray[z].classList.remove('active');
+  }
 });
 
 window.onscroll = () => {
-  body.classList.remove('active');
-  closeMenu.classList.remove('active');
-  menuLists.classList.remove('active');
-  openMenu.classList.remove('active');
-  homeIC.classList.remove('active');
+  for (let z = 0; z < MenuArray.length; z += 1) {
+    MenuArray[z].classList.remove('active');
+  }
 };
 /* -----------------------Create Feature Section-------------------------*/
 const featuredSpeaker = [

@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-  font-family: 'lato', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
 }
 
 body {
-  background-color: rgb(255, 255, 255, 0.9);
+  background: #f8f8f8;
 }
 
 body,
@@ -16,7 +17,7 @@ body,
 
 a {
   text-decoration: none;
-  color: #272a31;
+  color: #868686;
 }
 
 .home-icon {
@@ -29,6 +30,10 @@ a {
   display: none;
   margin: 0;
   padding: 0;
+}
+
+.toolbar-2-cont .fa-house {
+  color: black;
 }
 
 .toolbar-2 .menu-close-bar {
@@ -194,47 +199,49 @@ body.active {
   padding: 0.6rem;
   margin-left: 25%;
   font-size: 0.9rem;
-  color: #74767b;
+  color: #515151;
   background-color: #fff;
   border: 1px solid #e3e3e3;
 }
 
 .abouthome-content2 p {
   text-align: center;
+  color: #000;
 }
 
 .home-content3 {
   margin-left: 7%;
   padding-left: 1rem;
   width: 75%;
-  color: #272a31;
+  color: #515151;
   padding-bottom: 2rem;
 }
 
 .abouthome-content3 {
   text-align: center;
-  color: #74767b;
   width: 50%;
   margin-left: 25%;
   padding-bottom: 4rem;
   padding-top: 1rem;
+  color: #7a7a7a;
 }
 
 .abouthome-content3 a {
   text-decoration: underline;
+  color: #5f5f5f;
 }
 
 .home-content3 .date {
   font-size: 1.2rem;
   font-weight: 900;
-  color: #272a31;
+  color: #595959;
   margin-bottom: 0;
 }
 
 .home-content3 .place {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #272a31;
+  color: #868686;
 }
 
 /* styling for home section */
@@ -250,7 +257,7 @@ body.active {
 .about-global-summit h2 {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #272a31;
+  color: #2c2c2c;
 }
 
 .about-global-summit h2::after {
@@ -267,7 +274,7 @@ body.active {
 .about-global-summit p {
   width: 40%;
   margin-left: 30%;
-  color: #272a31;
+  color: #838383;
   font-size: 0.9em;
 }
 
@@ -283,12 +290,13 @@ body.active {
 .past-campaign h2 {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #272a31;
+  color: #2c2c2c;
 }
 
 .past-campaign p {
   width: 60%;
   margin-left: 20%;
+  color: #838383;
 }
 
 .past-campaign h2::after {
@@ -546,6 +554,7 @@ body.active {
 .show-more-less-speaker .fa-angle-down,
 .show-more-less-speaker .fa-angle-up {
   color: tomato;
+  padding-left: 10px;
 }
 
 .speakers .speaker-three,
@@ -563,7 +572,7 @@ body.active {
 
 /* partner section styling  */
 .Partners {
-  background-color: #434848;
+  background: #414246;
   padding-top: 2%;
   padding-bottom: 3%;
 }
@@ -609,7 +618,7 @@ body.active {
   display: flex;
   justify-content: space-between;
   padding: 4% 10%;
-  background-color: rgb(210, 210, 210, 0.7);
+  background: #f2f2f2;
   align-items: center;
 }
 
@@ -999,6 +1008,7 @@ body.active {
 
   .about-partners {
     display: none;
+    background: #2e2e2e;
   }
 
   /* partner section styling  */
@@ -1007,6 +1017,7 @@ body.active {
   .foot p {
     width: 80%;
     font-size: 0.85rem;
+    color: #272a31;
   }
 
   .about-foot {
