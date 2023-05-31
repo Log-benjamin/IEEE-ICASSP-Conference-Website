@@ -60,7 +60,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://log-benjamin.github.io/IEEE-ICASSP-Conference-Website/)
+- [Live Demo Link](https://log-benjamin.github.io/IEEE-ICASSP-Conference-Website)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
