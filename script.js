@@ -39,7 +39,7 @@ const featuredSpeaker = [
   {
     idNo: 1,
     speakerNo: 'speaker-two',
-    speakerImg: 'assets/Richard G Baraniuk.PNG',
+    speakerImg: 'assets/Richard G Baraniuk.png',
     speakerName: 'Richard G. Baranuk',
     speakerTitle: 'Professor of Electrical and Computer Engineering at Rice',
     abstract: 'We study the geometry of deep learning through the lens of approximation theory via splines. The enabling insight is that a large class of deep networks can be written as a composition of continuous piecewise affine (CPA) spline operators.',
@@ -47,7 +47,7 @@ const featuredSpeaker = [
   {
     idNo: 2,
     speakerNo: 'speaker-three',
-    speakerImg: 'assets/Arjun R Pillai.PNG',
+    speakerImg: 'assets/Michael l Jordan.png',
     speakerName: 'Michael l.Jordan',
     speakerTitle: 'Distinguished Professor in the Department of Electrical Engineering and Computer Science at the University of California, Berkeley',
     abstract: 'Artificial intelligence (AI) has focused on a paradigm in which intelligence inheres in a single, autonomous agent.  Social issues are entirely secondary in this paradigm. When AI systems are deployed...',
@@ -55,7 +55,7 @@ const featuredSpeaker = [
   {
     idNo: 3,
     speakerNo: 'speaker-four',
-    speakerImg: 'assets/Christos Harilos.PNG',
+    speakerImg: 'assets/Christos Harilos.png',
     speakerName: 'Christos Harilaos',
     speakerTitle: 'Donovan Family Professor of Computer Science at Columbia University',
     abstract: 'There is little doubt that cognitive phenomena are the result of neural activity.  However, there has been slow progress towards articulating an overarching computational theory of how exactly this happens.',
