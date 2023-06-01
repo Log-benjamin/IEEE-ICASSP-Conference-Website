@@ -31,7 +31,7 @@ const featuredSpeaker = [
   {
     idNo: 0,
     speakerNo: 'speaker-one',
-    speakerImg: 'assets/Andrea Goldsmith.PNG',
+    speakerImg: 'assets/Andrea Goldsmith.png',
     speakerName: 'Andrea Goldsmith',
     speakerTitle: 'Dean of Engineering and Applied Science at Princeton University',
     abstract: 'As 5G takes to the airwaves, we now turn our imagination to the next generation of wireless technology, The promise of this technology has created an international race to innovate, with significant investment by government as well as industry.',
