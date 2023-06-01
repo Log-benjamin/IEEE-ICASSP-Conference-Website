@@ -47,7 +47,7 @@ const featuredSpeaker = [
   {
     idNo: 2,
     speakerNo: 'speaker-three',
-    speakerImg: 'assets/Michael l Jordan.PNG',
+    speakerImg: 'assets/Arjun R Pillai.PNG',
     speakerName: 'Michael l.Jordan',
     speakerTitle: 'Distinguished Professor in the Department of Electrical Engineering and Computer Science at the University of California, Berkeley',
     abstract: 'Artificial intelligence (AI) has focused on a paradigm in which intelligence inheres in a single, autonomous agent.  Social issues are entirely secondary in this paradigm. When AI systems are deployed...',
